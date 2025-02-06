@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "a33cf7f5-173a-400b-84eb-2070a161490d",
+		"name": "ApiCinelopis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36969114"
+	},
+	"item": [
+		{
+			"name": "LISTAPELICULA",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/PeliculasWebService/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"PeliculasWebService",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GUARDARPELICULA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idPeli\": 3,\r\n    \"nombre\": \"La lista de Schindler\",\r\n    \"tipo\": \"Historico\",\r\n    \"precio\": 96,\r\n    \"fechaLanz\": \"2019-02-28\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/PeliculasWebService/guardar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"PeliculasWebService",
+						"guardar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BUSCARXIDPELI",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idPeli\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/PeliculasWebService/buscarXid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"PeliculasWebService",
+						"buscarXid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EDITARPELI",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idPeli\": 2,\r\n    \"nombre\": \"Depredador 2\",\r\n    \"tipo\": \"Ficción Terror\",\r\n    \"precio\": 150,\r\n    \"fechaLanz\": \"1987-06-12\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/PeliculasWebService/editar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"PeliculasWebService",
+						"editar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ELIMINAPELICULA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idPeli\":3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/PeliculasWebService/eliminar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"PeliculasWebService",
+						"eliminar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
